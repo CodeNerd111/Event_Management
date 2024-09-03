@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../styles/dashboard.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Event Management Dashboard</h1>
+        <div class="header-buttons">
+            <button onclick="window.location.href='create-event.html'">Create Event</button>
+            <button onclick="window.location.href='manage-events.html'">Manage Events</button>
+        </div>
+    </header>
+    <main class="dashboard-content">
+        <h2>Upcoming Events</h2>
+        <table class="event-table" id="upcoming-events">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Total Tickets</th>
+                    <th>Sold Tickets</th>
+                    <th>Remaining Tickets</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Upcoming events will be dynamically inserted here -->
+            </tbody>
+        </table>
+
+        <h2>Past Events</h2>
+        <table class="event-table" id="past-events">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Total Tickets</th>
+                    <th>Sold Tickets</th>
+                    <th>Remaining Tickets</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Past events will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </main>
+    <script src="../scripts/dashboard.js"></script>
+</body>
+</html>

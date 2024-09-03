@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticketing & Registration</title>
+    <link rel="stylesheet" href="../styles/ticketing.css">
+</head>
+<body>
+    <div class="ticketing-container">
+        <h2>Register for the Event</h2>
+        <form id="ticketing-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="ticket-quantity">Number of Tickets:</label>
+            <input type="number" id="ticket-quantity" name="ticket-quantity" min="1" required>
+
+            <button type="submit">Complete Registration</button>
+        </form>
+    </div>
+    <script src="../scripts/ticketing.js"></script>
+</body>
+</html>
